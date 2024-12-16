@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Museo', 'Segoe UI', 'Arial', sans-serif;
+  font-weight: 500;
+  background-color: var(--background-color-primary);
+  transition:
+    background-color 0.2s linear,
+    color 0.2s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+body::-webkit-scrollbar-track {
+  display: none;
+  height: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  height: 5px;
+  background-color: #7f5af0;
+  border-radius: 20px;
+  border: 1px solid #7f5af0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+:root {
+  --background-color-primary: #202020;
+  --background-color-secondary: #090b16;
+  --background-color-luna: #ffffff;
+  --background-color-ul: rgba(255, 255, 255, 0.05);
+  --accent-color: #cacaca;
+  --text-primary-color: white;
+  --text-color: white;
+  --text-color-h1: rgb(255, 255, 255);
+  --text-color-h2: rgba(255, 255, 255, 0.5);
+  --element-size: 4rem;
+}
+
+:root.dark-theme {
+  --background-color-primary: #ffffff;
+  --background-color-secondary: #2d2d30;
+  --background-color-luna: #000000;
+  --background-color-ul: rgb(0, 0, 0);
+  --accent-color: #3f3f3f;
+  --text-primary-color: #ddd;
+  --text-color: rgb(255, 255, 255);
+  --text-color-h1: rgb(0, 0, 0);
+  --text-color-h2: rgba(0, 0, 0, 0.5);
+}
