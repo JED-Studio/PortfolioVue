@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio__profile-title">
-    <h2>{{ $t('AppProfile.hello') }}</h2>
-    <p>Будем знакомы</p>
+    <h2>{{ $t('AppProfile.myName') }}</h2>
+    <p>{{ $t('AppProfile.hello') }}</p>
   </div>
   <div class="portfolio__profile-img">
     <img src="/public/svg/developer.svg" alt="" />

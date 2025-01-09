@@ -20,8 +20,6 @@ export default defineComponent({
       localStorage.setItem('local', language)
     }
 
-    computed(localStorage.getItem('local'))
-
     return {
       lang,
       toggleLang,

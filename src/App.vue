@@ -1,21 +1,24 @@
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 import AppLanguage from './components/AppLanguage.vue'
 import AppSwitch from './components/AppSwitch.vue'
-import Profile from './components/Profile.vue'
+
 import AppProfile from './components/AppProfile.vue'
 import AppAboutMe from './components/AppAboutMe.vue'
+import AppExperience from './components/AppExperience.vue'
 
 export default defineComponent({
   components: {
     AppLanguage,
     AppSwitch,
-    Profile,
+    AppExperience,
     AppProfile,
     AppAboutMe,
   },
 
-  setup() {},
+  setup() {
+    const items = ref([])
+  },
 })
 </script>
 
@@ -26,7 +29,6 @@ export default defineComponent({
         <div class="flex justify-end gap-6 py-4">
           <AppSwitch />
           <AppLanguage />
-          <Profile />
         </div>
       </div>
     </header>
@@ -39,8 +41,15 @@ export default defineComponent({
     </div>
     <div class="portfolio__about-me">
       <div class="portfolio__container max-w-7xl mx-auto pl-4 pr-4">
-        <div class="portfolio__about-me-block">
+        <div class="portfolio__about-me-block py-4">
           <AppAboutMe />
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__experience">
+      <div class="portfolio__container max-w-7xl mx-auto pl-4 pr-4">
+        <div class="portfolio__experience-block py-4">
+          <AppExperience />
         </div>
       </div>
     </div>
