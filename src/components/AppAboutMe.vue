@@ -7,6 +7,10 @@
   </div>
 </template>
 <style>
+.portfolio__about-me-description {
+  color: var(--text-color);
+}
+
 .portfolio__about-me-description > h2 {
   text-align: center;
   margin-bottom: 32px;

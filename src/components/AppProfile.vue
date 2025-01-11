@@ -10,6 +10,10 @@
 
 <style>
 .portfolio__profile-title {
+  color: var(--text-color);
+}
+
+.portfolio__profile-title {
   flex: 50%;
 }
 

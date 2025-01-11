@@ -17,10 +17,11 @@ export default defineComponent({
       } else {
         setTheme('light-theme')
       }
+      userTheme.value = localStorage.getItem('user-theme')
     }
 
     const getTheme = () => {
-      localStorage.getItem('user-theme')
+      return localStorage.getItem('user-theme')
     }
 
     const setTheme = (theme) => {

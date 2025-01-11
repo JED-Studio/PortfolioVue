@@ -2,10 +2,11 @@
 import { defineComponent, ref } from 'vue'
 import AppLanguage from './components/AppLanguage.vue'
 import AppSwitch from './components/AppSwitch.vue'
-
 import AppProfile from './components/AppProfile.vue'
 import AppAboutMe from './components/AppAboutMe.vue'
 import AppExperience from './components/AppExperience.vue'
+import AppCartman from './components/AppCartman.vue'
+import AppSkills from './components/AppSkills.vue'
 
 export default defineComponent({
   components: {
@@ -14,11 +15,11 @@ export default defineComponent({
     AppExperience,
     AppProfile,
     AppAboutMe,
+
+    AppSkills,
   },
 
-  setup() {
-    const items = ref([])
-  },
+  setup() {},
 })
 </script>
 
@@ -50,6 +51,13 @@ export default defineComponent({
       <div class="portfolio__container max-w-7xl mx-auto pl-4 pr-4">
         <div class="portfolio__experience-block py-4">
           <AppExperience />
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__my-skills">
+      <div class="portfolio__container max-w-7xl mx-auto pl-4 pr-4">
+        <div class="portfolio__my-skills-block py-4">
+          <AppSkills />
         </div>
       </div>
     </div>
