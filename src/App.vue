@@ -7,6 +7,7 @@ import AppAboutMe from './components/AppAboutMe.vue'
 import AppExperience from './components/AppExperience.vue'
 import AppCartman from './components/AppCartman.vue'
 import AppSkills from './components/AppSkills.vue'
+import AppWork from './components/AppWork.vue'
 
 export default defineComponent({
   components: {
@@ -15,7 +16,7 @@ export default defineComponent({
     AppExperience,
     AppProfile,
     AppAboutMe,
-
+    AppWork,
     AppSkills,
   },
 
@@ -58,6 +59,13 @@ export default defineComponent({
       <div class="portfolio__container max-w-7xl mx-auto pl-4 pr-4">
         <div class="portfolio__my-skills-block py-4">
           <AppSkills />
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__work">
+      <div class="portfolio__container max-w-7xl mx-auto pl-4 pr-4">
+        <div class="portfolio__work-block py-4">
+          <AppWork />
         </div>
       </div>
     </div>

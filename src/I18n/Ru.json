@@ -38,5 +38,29 @@
   "AppSkills": {
     "skills": "Мой стек",
     "skillsTools": "Инструменты и прочее"
+  },
+  "AppWork1": {
+    "workFinalized": "Дорабатывается",
+    "workName": "Портфолио",
+    "workDescription": "Портфолио для веб-разработчика",
+    "workStack": "Портфолио для веб-разработчика"
+  },
+  "AppWork2": {
+    "workFinalized": "Дорабатывается",
+    "workName": "Портфолио",
+    "workDescription": "Портфолио для веб-разработчика",
+    "workStack": "Портфолио для веб-разработчика"
+  },
+  "AppWork3": {
+    "workFinalized": "Дорабатывается",
+    "workName": "Портфолио",
+    "workDescription": "Портфолио для веб-разработчика",
+    "workStack": "Портфолио для веб-разработчика"
+  },
+  "AppWork4": {
+    "workFinalized": "Дорабатывается",
+    "workName": "Портфолио",
+    "workDescription": "Портфолио для веб-разработчика",
+    "workStack": "Портфолио для веб-разработчика"
   }
 }

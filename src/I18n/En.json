@@ -1,3 +1,66 @@
 {
-  "hello": "Hello"
+  "AppProfile": {
+    "myName": "Hello, I'm Roma",
+    "hello": "Nice to meet you"
+  },
+  "AppAboutMe": {
+    "aboutMe": "About Me",
+    "aboutMeDescription": "🧑🏽‍💻 Frontend developer from Kaspiysk (Russia) seeking growth and professional development",
+    "aboutMeDescription1": "🖥️ I came to frontend development to create cool interfaces and enhance user experience",
+    "aboutMeDescription2": "📚 I follow web standards, watch lectures from Yandex's SHRI, and read articles on Habr and Medium. I'm very interested in the results of the State of CSS and State of JS surveys"
+  },
+  "AppExperience": {
+    "experienceTitle": "Work Experience",
+    "experiencePosition": "Web Developer",
+    "experienceTime": "Full-time",
+    "experienceDate": "April 2022 - December 2022 (9 months)",
+    "experienceLocation": "Kaspiysk, Russia",
+    "experienceDoing": "Development of animations and interactive elements",
+    "experienceDoing1": "Refactoring and rewriting old code",
+    "experienceDoing2": "Optimization of JavaScript code",
+    "experienceDoing3": "Integration of third-party APIs",
+    "experienceStack": "Technology stack:",
+    "experienceTools": "Tools:"
+  },
+  "AppExperience1": {
+    "experienceTitle": "",
+    "experiencePosition": "Frontend Developer",
+    "experienceTime": "Full-time",
+    "experienceDate": "April 2022 - December 2022 (9 months)",
+    "experienceLocation": "Kaspiysk, Russia",
+    "experienceDoing": "Development of animations and interactive elements",
+    "experienceDoing1": "Refactoring and rewriting old code",
+    "experienceDoing2": "Optimization of JavaScript code",
+    "experienceDoing3": "Integration of third-party APIs",
+    "experienceStack": "Technology stack:",
+    "experienceTools": "Tools:"
+  },
+  "AppSkills": {
+    "skills": "My Stack",
+    "skillsTools": "Tools and more"
+  },
+  "AppWork1": {
+    "workFinalized": "In progress",
+    "workName": "Portfolio",
+    "workDescription": "Portfolio for a web developer",
+    "workStack": "Portfolio for a web developer"
+  },
+  "AppWork2": {
+    "workFinalized": "In progress",
+    "workName": "Portfolio",
+    "workDescription": "Portfolio for a web developer",
+    "workStack": "Portfolio for a web developer"
+  },
+  "AppWork3": {
+    "workFinalized": "In progress",
+    "workName": "Portfolio",
+    "workDescription": "Portfolio for a web developer",
+    "workStack": "Portfolio for a web developer"
+  },
+  "AppWork4": {
+    "workFinalized": "In progress",
+    "workName": "Portfolio",
+    "workDescription": "Portfolio for a web developer",
+    "workStack": "Portfolio for a web developer"
+  }
 }
