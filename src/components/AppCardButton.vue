@@ -2,18 +2,22 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+  props: {
+    urlGit: String,
+    urlWeb: String,
+  },
   setup() {},
 })
 </script>
 
 <template>
-  <a href="">
+  <a :href="urlGit">
     <img width="24" height="24" src="/public/svg/github-icon.svg" alt="" />
-    <span class="">файл</span>
+    <span class="">{{ $t('AppCardButton.buttonGitHub') }}</span>
   </a>
-  <a href="">
+  <a :href="urlWeb">
     <img width="24" height="24" src="/public/svg/external-icon.svg" alt="" />
-    <span class="">файл</span>
+    <span class="">{{ $t('AppCardButton.buttonWeb') }}</span>
   </a>
 </template>
 

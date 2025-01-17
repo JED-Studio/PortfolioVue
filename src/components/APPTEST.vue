@@ -3,7 +3,7 @@ import { defineComponent, onMounted, ref } from 'vue'
 
 export default defineComponent({
   setup() {
-    const userTheme = ref('dark-theme')
+    const userTheme = ref('light-theme')
 
     const toggleTheme = () => {
       if (userTheme.value === 'light-theme') {
@@ -34,8 +34,12 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      const initUserTheme = getTheme() || getMediaPreference()
-      setTheme(initUserTheme)
+      const initUserTheme = getTheme()
+      if (initUserTheme) {
+        setTheme(initUserTheme)
+      } else {
+        getMediaPreference()
+      }
     })
 
     return {

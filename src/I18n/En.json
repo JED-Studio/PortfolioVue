@@ -39,28 +39,32 @@
     "skills": "My Stack",
     "skillsTools": "Tools and more"
   },
-  "AppWork1": {
+  "AppWorkWeb1": {
     "workFinalized": "In progress",
     "workName": "Portfolio",
     "workDescription": "Portfolio for a web developer",
     "workStack": "Portfolio for a web developer"
   },
-  "AppWork2": {
+  "AppWorkWeb2": {
     "workFinalized": "In progress",
     "workName": "Portfolio",
     "workDescription": "Portfolio for a web developer",
     "workStack": "Portfolio for a web developer"
   },
-  "AppWork3": {
+  "AppWorkJs1": {
     "workFinalized": "In progress",
     "workName": "Portfolio",
     "workDescription": "Portfolio for a web developer",
     "workStack": "Portfolio for a web developer"
   },
-  "AppWork4": {
+  "AppWorkJs2": {
     "workFinalized": "In progress",
     "workName": "Portfolio",
     "workDescription": "Portfolio for a web developer",
     "workStack": "Portfolio for a web developer"
+  },
+  "AppCardButton": {
+    "buttonGitHub": "Посмотреть код",
+    "buttonWeb": "Посмотреть вживую"
   }
 }

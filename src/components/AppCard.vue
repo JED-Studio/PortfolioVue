@@ -13,6 +13,8 @@ export default defineComponent({
     description: String,
     stack: String,
     tools: Array,
+    urlGit: String,
+    urlWeb: String,
   },
   setup() {
     return {}
@@ -22,7 +24,7 @@ export default defineComponent({
 
 <template>
   <div class="portfolio__card">
-    <div>
+    <div class="portfolio__card-image">
       <span>{{ $t(title) }}</span>
       <img :src="image" alt="" />
     </div>
@@ -37,7 +39,7 @@ export default defineComponent({
         </li>
       </ul>
       <div class="portfolio__card-button">
-        <AppCardButton />
+        <AppCardButton :urlGit="urlGit" :urlWeb="urlWeb" />
       </div>
     </div>
   </div>
@@ -49,7 +51,21 @@ export default defineComponent({
     0 3px 6px rgba(0, 0, 0, 0.16),
     0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: var(--background-color-primary);
+  border-radius: 15px;
   overflow: hidden;
+}
+
+.portfolio__card-image {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.portfolio__card-image > span {
+  position: absolute;
+}
+
+.portfolio__card-image > img {
 }
 
 .portfolio__card-block {

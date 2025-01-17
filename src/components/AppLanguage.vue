@@ -5,25 +5,31 @@ import { useI18n } from 'vue-i18n'
 export default defineComponent({
   setup() {
     const lang = ref(false)
-    const { locale } = useI18n()
-
+    const i18n = useI18n({ useScope: 'global' })
+    const currentLocale = ref(localStorage.getItem('locale') || 'Ru')
+    i18n.locale.value = currentLocale.value
     const toggleLang = () => {
       lang.value = !lang.value
     }
 
-    onMounted(() => {
-      locale.value = localStorage.getItem('local')
-    })
-
     const switchLanguage = (language) => {
-      locale.value = language
+      i18n.locale.value = language
+      currentLocale.value = language
       localStorage.setItem('local', language)
     }
+
+    const flag = computed(() => {
+      return currentLocale.value === 'Ru'
+        ? '/public/svg/russia.svg'
+        : '/public/svg/united_kingdom.svg'
+    })
 
     return {
       lang,
       toggleLang,
       switchLanguage,
+      currentLocale,
+      flag,
     }
   },
 })
@@ -32,8 +38,8 @@ export default defineComponent({
 <template>
   <div class="portfolio__language">
     <div class="portfolio__global-language" @click="toggleLang()">
-      <img class="portfolio__img-lang" src="/public/svg/russia.svg" alt="" />
-      <p class="portfolio__item-lang">RU</p>
+      <img class="portfolio__img-lang" :src="flag" alt="" />
+      <p class="portfolio__item-lang">{{ currentLocale.toUpperCase() }}</p>
       <img
         class="portfolio__img-arrow"
         src="/public/svg/icon.svg"
@@ -104,6 +110,6 @@ export default defineComponent({
 }
 
 .portfolio__item-lang {
-  color: white;
+  color: var(--text-color);
 }
 </style>

@@ -39,28 +39,32 @@
     "skills": "Мой стек",
     "skillsTools": "Инструменты и прочее"
   },
-  "AppWork1": {
+  "AppWorkWeb1": {
     "workFinalized": "Дорабатывается",
     "workName": "Портфолио",
     "workDescription": "Портфолио для веб-разработчика",
-    "workStack": "Портфолио для веб-разработчика"
+    "workStack": "Стек технологий"
   },
-  "AppWork2": {
+  "AppWorkWeb2": {
     "workFinalized": "Дорабатывается",
     "workName": "Портфолио",
     "workDescription": "Портфолио для веб-разработчика",
-    "workStack": "Портфолио для веб-разработчика"
+    "workStack": "Стек технологий"
   },
-  "AppWork3": {
+  "AppWorkJs1": {
     "workFinalized": "Дорабатывается",
-    "workName": "Портфолио",
-    "workDescription": "Портфолио для веб-разработчика",
-    "workStack": "Портфолио для веб-разработчика"
+    "workName": "Quiz по JavaScript",
+    "workDescription": "Викторина по JavaScript, основанная на материалах с сайта learn.javascript.ru!",
+    "workStack": "Стек технологий"
   },
-  "AppWork4": {
-    "workFinalized": "Дорабатывается",
-    "workName": "Портфолио",
-    "workDescription": "Портфолио для веб-разработчика",
-    "workStack": "Портфолио для веб-разработчика"
+  "AppWorkJs2": {
+    "workFinalized": "В работе",
+    "workName": "To-do-list__O2",
+    "workDescription": "Проект представляет собой планировщик задач с возможностью добавления, удаления, редактирования и отметки задач как выполненных. Выполненные задачи перемещаются в отдельный список. Данные сохраняются в локальном хранилище, а интерфейс включает анимацию для добавления и удаления задач. Используются Vue.js, HTML и CSS.",
+    "workStack": "Стек технологий"
+  },
+  "AppCardButton": {
+    "buttonGitHub": "Посмотреть код",
+    "buttonWeb": "Посмотреть вживую"
   }
 }

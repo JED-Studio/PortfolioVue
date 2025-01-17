@@ -1,6 +1,7 @@
 <template>
   <svg
     fill="rgb(127, 90, 240)"
+    class="icon"
     width="24px"
     height="24px"
     viewBox="0 0 24 24"

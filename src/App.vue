@@ -8,6 +8,7 @@ import AppExperience from './components/AppExperience.vue'
 import AppCartman from './components/AppCartman.vue'
 import AppSkills from './components/AppSkills.vue'
 import AppWork from './components/AppWork.vue'
+import AppNavigation from './components/AppNavigation.vue'
 
 export default defineComponent({
   components: {
@@ -18,6 +19,7 @@ export default defineComponent({
     AppAboutMe,
     AppWork,
     AppSkills,
+    AppNavigation,
   },
 
   setup() {},
@@ -26,11 +28,14 @@ export default defineComponent({
 
 <template>
   <div class="portfolio">
-    <header class="header">
+    <header class="portfolio__header">
       <div class="portfolio__container max-w-7xl mx-auto pl-4 pr-4">
-        <div class="flex justify-end gap-6 py-4">
-          <AppSwitch />
-          <AppLanguage />
+        <div class="flex justify-between items-center py-4">
+          <AppNavigation />
+          <div class="portfolio__header-flex flex gap-5 items-center">
+            <AppSwitch />
+            <AppLanguage />
+          </div>
         </div>
       </div>
     </header>
@@ -72,4 +77,21 @@ export default defineComponent({
   </div>
 </template>
 
-<style></style>
+<style>
+header {
+  top: 0;
+  position: sticky;
+}
+
+header > div {
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 0px 5px 0px black;
+  background-color: var(--background-color-primary);
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+</style>
