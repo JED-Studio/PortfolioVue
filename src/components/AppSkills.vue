@@ -33,8 +33,8 @@
           <p>Nuxt</p>
         </li>
         <li>
-          <img src="" alt="" />
-          <p></p>
+          <img src="/public/svg/Pinia.svg" alt="" />
+          <p>Pinia</p>
         </li>
       </ul>
 

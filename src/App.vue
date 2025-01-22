@@ -9,6 +9,7 @@ import AppCartman from './components/AppCartman.vue'
 import AppSkills from './components/AppSkills.vue'
 import AppWork from './components/AppWork.vue'
 import AppNavigation from './components/AppNavigation.vue'
+import AppSocial from './components/AppSocial.vue'
 
 export default defineComponent({
   components: {
@@ -19,6 +20,7 @@ export default defineComponent({
     AppAboutMe,
     AppWork,
     AppSkills,
+    AppSocial,
     AppNavigation,
   },
 
@@ -71,6 +73,13 @@ export default defineComponent({
       <div class="portfolio__container max-w-7xl mx-auto pl-4 pr-4">
         <div class="portfolio__work-block py-4">
           <AppWork />
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__social">
+      <div class="portfolio__container max-w-7xl mx-auto pl-4 pr-4">
+        <div class="portfolio__social-block py-4">
+          <AppSocial />
         </div>
       </div>
     </div>

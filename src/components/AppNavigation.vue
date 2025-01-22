@@ -47,6 +47,7 @@ export default defineComponent({
 }
 
 .portfolio__navigation-list > a {
+  cursor: pointer;
   color: var(--text-color);
   margin-right: 15px;
 }
@@ -83,9 +84,20 @@ export default defineComponent({
     padding: 5px;
     color: var(--text-color);
     margin-bottom: 10px;
-    background: #4d4d4d;
+
     border-radius: 4px;
     margin-right: 0;
+    transition: all 0.5s ease;
+  }
+
+  .portfolio__navigation-list > a:hover {
+    color: var(--text-color-hover);
+    background-color: var(--background-color-hover);
+  }
+
+  .bi-x-lg {
+    color: var(--background-color-hover);
+    cursor: pointer;
   }
 }
 </style>

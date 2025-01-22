@@ -47,7 +47,6 @@ export default defineComponent({
       <AppCard
         v-for="card in filteredCards"
         :key="card.cardId"
-        :title="card.title"
         :name="card.name"
         :description="card.description"
         :stack="card.stack"

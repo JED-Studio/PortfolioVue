@@ -2,7 +2,7 @@
 import { defineComponent, ref, onMounted } from 'vue'
 
 import Icon from './icons/Icon.vue'
-import IconLogo from './icons/Iconlogo.vue'
+import IconLogo from './icons/IconLogo.vue'
 
 export default defineComponent({
   components: {

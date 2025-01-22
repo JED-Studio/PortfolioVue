@@ -7,7 +7,6 @@ export default defineComponent({
     AppCardButton,
   },
   props: {
-    title: String,
     image: String,
     name: String,
     description: String,
@@ -25,7 +24,6 @@ export default defineComponent({
 <template>
   <div class="portfolio__card">
     <div class="portfolio__card-image">
-      <span>{{ $t(title) }}</span>
       <img :src="image" alt="" />
     </div>
     <div class="portfolio__card-block">
@@ -53,6 +51,8 @@ export default defineComponent({
   background-color: var(--background-color-primary);
   border-radius: 15px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio__card-image {
@@ -61,15 +61,15 @@ export default defineComponent({
   object-fit: cover;
 }
 
-.portfolio__card-image > span {
-  position: absolute;
-}
-
 .portfolio__card-image > img {
 }
 
 .portfolio__card-block {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: var(--text-color);
 }
 
 .portfolio__card-block > h3,

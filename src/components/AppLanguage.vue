@@ -1,8 +1,12 @@
 <script>
 import { computed, defineComponent, ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import IconArrows from './icons/IconArrows.vue'
 
 export default defineComponent({
+  components: {
+    IconArrows,
+  },
   setup() {
     const lang = ref(false)
     const i18n = useI18n({ useScope: 'global' })
@@ -40,12 +44,8 @@ export default defineComponent({
     <div class="portfolio__global-language" @click="toggleLang()">
       <img class="portfolio__img-lang" :src="flag" alt="" />
       <p class="portfolio__item-lang">{{ currentLocale.toUpperCase() }}</p>
-      <img
-        class="portfolio__img-arrow"
-        src="/public/svg/icon.svg"
-        :class="{ 'portfolio__img-arrow--active': lang }"
-        alt=""
-      />
+
+      <IconArrows class="portfolio__img-arrow" :class="{ 'portfolio__img-arrow--active': lang }" />
     </div>
 
     <div v-show="lang" class="portfolio__block">
@@ -77,6 +77,7 @@ export default defineComponent({
   justify-content: center;
   gap: 3px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .portfolio__block {
@@ -91,6 +92,7 @@ export default defineComponent({
   justify-content: center;
   gap: 10px;
   padding: 12px;
+  cursor: pointer;
 }
 
 .portfolio__img-lang {

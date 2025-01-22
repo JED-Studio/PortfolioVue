@@ -1,6 +1,5 @@
 export const cards = [
   {
-    title: 'AppWorkWeb1.workFinalized',
     image: '/public/image/Nuxt.png',
     name: 'AppWorkWeb1.workName',
     description: 'AppWorkWeb1.workDescription',
@@ -11,7 +10,6 @@ export const cards = [
     cardId: 1,
   },
   {
-    title: 'AppWorkWeb2.workFinalized',
     image: '/public/image/Image (152).jpg',
     name: 'AppWorkWeb2.workName',
     description: 'AppWorkWeb2.workDescription',
@@ -21,7 +19,6 @@ export const cards = [
     cardId: 1,
   },
   {
-    title: 'AppWorkWeb3.workFinalized',
     image: '/public/image/Image (155).jpg',
     name: 'AppWorkWeb3.workName',
     description: 'AppWorkWeb3.workDescription',
@@ -31,7 +28,15 @@ export const cards = [
     cardId: 1,
   },
   {
-    title: 'AppWorkJs1.workFinalized',
+    image: '/public/image/Image (164).jpg',
+    name: 'AppWorkWeb4.workName',
+    description: 'AppWorkWeb4.workDescription',
+    stack: 'AppWorkWeb4.workStack',
+    tools: ['HTML', 'CSS', 'JS'],
+    url: 'https://github.com/Flowseal/zapret-discord-youtube/releases',
+    cardId: 1,
+  },
+  {
     image: '/public/image/JavaS.png',
     name: 'AppWorkJs1.workName',
     description: 'AppWorkJs1.workDescription',
@@ -41,7 +46,6 @@ export const cards = [
     cardId: 2,
   },
   {
-    title: 'AppWorkJs2.workFinalized',
     image: '/public/image/Scrin.png',
     name: 'AppWorkJs2.workName',
     description: 'AppWorkJs2.workDescription',
@@ -51,11 +55,28 @@ export const cards = [
     cardId: 2,
   },
   {
-    title: 'AppWorkJs2.workFinalized',
-    image: '/public/image/Scrin.png',
-    name: 'AppWorkJs2.workName',
-    description: 'AppWorkJs2.workDescription',
-    stack: 'AppWorkJs2.workStack',
+    image: '/public/image/Image (121).png',
+    name: 'AppWorkJs3.workName',
+    description: 'AppWorkJs3.workDescription',
+    stack: 'AppWorkJs3.workStack',
+    tools: ['HTML', 'CSS', 'Vue 3'],
+    url: 'https://github.com/Flowseal/zapret-discord-youtube/releases',
+    cardId: 2,
+  },
+  {
+    image: '/public/image/Image (154).jpg',
+    name: 'AppWorkJs4.workName',
+    description: 'AppWorkJs4.workDescription',
+    stack: 'AppWorkJs4.workStack',
+    tools: ['HTML', 'CSS', 'Vue 3'],
+    url: 'https://github.com/Flowseal/zapret-discord-youtube/releases',
+    cardId: 2,
+  },
+  {
+    image: '/public/image/Image (120).png',
+    name: 'AppWorkJs5.workName',
+    description: 'AppWorkJs5.workDescription',
+    stack: 'AppWorkJs5.workStack',
     tools: ['HTML', 'CSS', 'Vue 3'],
     url: 'https://github.com/Flowseal/zapret-discord-youtube/releases',
     cardId: 2,
