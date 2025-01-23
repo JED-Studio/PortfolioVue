@@ -43,7 +43,7 @@ export default defineComponent({
   <div class="portfolio__language">
     <div class="portfolio__global-language" @click="toggleLang()">
       <img class="portfolio__img-lang" :src="flag" alt="" />
-      <p class="portfolio__item-lang">{{ currentLocale.toUpperCase() }}</p>
+      <p class="portfolio__item-lang-active">{{ currentLocale.toUpperCase() }}</p>
 
       <IconArrows class="portfolio__img-arrow" :class="{ 'portfolio__img-arrow--active': lang }" />
     </div>
@@ -82,7 +82,9 @@ export default defineComponent({
 
 .portfolio__block {
   position: absolute;
+  overflow: hidden;
   border-radius: 10px;
+  background-color: var(--background-color-primary);
   box-shadow: 0px 0px 6px 0px #080808;
 }
 
@@ -111,7 +113,20 @@ export default defineComponent({
   transform: rotate(180deg);
 }
 
-.portfolio__item-lang {
+.portfolio__item-lang,
+.portfolio__item-lang-active {
   color: var(--text-color);
+}
+
+.portfolio__item-lang-active .portfolio__item-lang:hover {
+  color: var(--text-color-hover);
+}
+
+.portfolio__block > div:hover {
+  background-color: var(--background-color-hover);
+}
+
+.portfolio__block > div:hover .portfolio__item-lang {
+  color: var(--text-color-hover);
 }
 </style>

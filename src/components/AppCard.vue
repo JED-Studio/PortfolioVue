@@ -53,6 +53,7 @@ export default defineComponent({
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: background-color 0.2s linear;
 }
 
 .portfolio__card-image {

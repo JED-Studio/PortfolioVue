@@ -1,13 +1,22 @@
 {
+  "AppNavigation": {
+    "profile": "Home",
+    "aboutMe": "About Me",
+    "experience": "Work Experience",
+    "skills": "My Skills",
+    "work": "Portfolio",
+    "contacts": "Contacts"
+  },
+
   "AppProfile": {
     "myName": "Hello, I'm Roma",
     "hello": "Nice to meet you"
   },
   "AppAboutMe": {
     "aboutMe": "About Me",
-    "aboutMeDescription": "🧑🏽‍💻 Frontend developer from Kaspiysk (Russia) seeking growth and professional development",
-    "aboutMeDescription1": "🖥️ I came to frontend development to create cool interfaces and enhance user experience",
-    "aboutMeDescription2": "📚 I follow web standards, watch lectures from Yandex's SHRI, and read articles on Habr and Medium. I'm very interested in the results of the State of CSS and State of JS surveys"
+    "aboutMeDescription": "🧑🏽‍💻 Frontend developer from Kaspiysk (Russia) looking for growth and professional development",
+    "aboutMeDescription1": "🖥️ I came to frontend development to create cool interfaces and improve user experience as much as possible",
+    "aboutMeDescription2": "📚 I listen to web standards, watch lectures from Yandex's SHRI, and read articles on Habr and Medium. I'm very interested in the results of the State of CSS and State of JS surveys"
   },
   "AppExperience": {
     "experienceTitle": "Work Experience",
@@ -40,31 +49,52 @@
     "skillsTools": "Tools and more"
   },
   "AppWorkWeb1": {
-    "workFinalized": "In progress",
     "workName": "Portfolio",
     "workDescription": "Portfolio for a web developer",
-    "workStack": "Portfolio for a web developer"
+    "workStack": "Technology stack"
   },
   "AppWorkWeb2": {
-    "workFinalized": "In progress",
     "workName": "Portfolio",
     "workDescription": "Portfolio for a web developer",
-    "workStack": "Portfolio for a web developer"
+    "workStack": "Technology stack"
+  },
+  "AppWorkWeb3": {
+    "workName": "JED 3D STUDIO",
+    "workDescription": "Website created for a 3D studio specializing in motion design and offering a portfolio of works using various software.",
+    "workStack": "Technology stack"
+  },
+  "AppWorkWeb4": {
+    "workName": "ZABITOV TOUR",
+    "workDescription": "Landing page dedicated to tourism in Dagestan.",
+    "workStack": "Technology stack"
   },
   "AppWorkJs1": {
-    "workFinalized": "In progress",
-    "workName": "Portfolio",
-    "workDescription": "Portfolio for a web developer",
-    "workStack": "Portfolio for a web developer"
+    "workName": "JavaScript Quiz",
+    "workDescription": "JavaScript quiz based on materials from learn.javascript.ru!",
+    "workStack": "Technology stack"
   },
   "AppWorkJs2": {
-    "workFinalized": "In progress",
-    "workName": "Portfolio",
-    "workDescription": "Portfolio for a web developer",
-    "workStack": "Portfolio for a web developer"
+    "workName": "To-do-list__O2",
+    "workDescription": "The project is a task planner with the ability to add, delete, edit, and mark tasks as completed. Completed tasks are moved to a separate list. Data is saved in local storage, and the interface includes animations for adding and removing tasks. Uses Vue.js, HTML, and CSS.",
+    "workStack": "Technology stack"
+  },
+  "AppWorkJs3": {
+    "workName": "Qpick Test Assignment",
+    "workDescription": "Develop using Vue, Vue Router, two pages of the Qpick online store. The first page is the product catalog, and the second is the cart with purchased items.",
+    "workStack": "Technology stack"
+  },
+  "AppWorkJs4": {
+    "workName": "Salvator Cyber Club",
+    "workDescription": "Website for a computer club, including sections with images of the club, a list of available games, pricing, and an embedded Yandex map to display the club's location. The site provides all the necessary information for visitors who want to learn more about the club's offerings and location.",
+    "workStack": "Technology stack"
+  },
+  "AppWorkJs5": {
+    "workName": "To-do-list Test Assignment",
+    "workDescription": "",
+    "workStack": "Technology stack"
   },
   "AppCardButton": {
-    "buttonGitHub": "Посмотреть код",
-    "buttonWeb": "Посмотреть вживую"
+    "buttonGitHub": "View Code",
+    "buttonWeb": "View Live"
   }
 }

@@ -1,5 +1,5 @@
 <script>
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, onMounted, onBeforeUnmount } from 'vue'
 import AppBurgerMenu from './AppBurgerMenu.vue'
 
 export default defineComponent({
@@ -12,6 +12,31 @@ export default defineComponent({
     const toggleBar = () => {
       sideBar.value = !sideBar.value
     }
+
+    const closeBar = () => {
+      sideBar.value = false
+    }
+
+    const handleClickOutside = (event) => {
+      const sidebarElement = document.querySelector('.portfolio__navigation')
+      const openButtonElement = document.querySelector('.portfolio__navigation-button-open')
+
+      if (
+        sidebarElement &&
+        !sidebarElement.contains(event.target) &&
+        !openButtonElement.contains(event.target)
+      ) {
+        closeBar()
+      }
+    }
+
+    onMounted(() => {
+      document.addEventListener('mousedown', handleClickOutside)
+    })
+
+    onBeforeUnmount(() => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    })
 
     return {
       sideBar,
@@ -28,11 +53,12 @@ export default defineComponent({
       <i class="bi bi-x-lg" @click="toggleBar"></i>
     </div>
     <div class="portfolio__navigation-list">
-      <a>Главная</a>
-      <a>Обо мне</a>
-      <a>Опыт Работы</a>
-      <a>Стек</a>
-      <a>Портфолио</a>
+      <a href="#portfolio__profile">{{ $t('AppNavigation.profile') }}</a>
+      <a href="#portfolio__about-me">{{ $t('AppNavigation.aboutMe') }}</a>
+      <a href="#portfolio__experience">{{ $t('AppNavigation.experience') }}</a>
+      <a href="#portfolio__my-skills">{{ $t('AppNavigation.skills') }}</a>
+      <a href="#portfolio__work">{{ $t('AppNavigation.work') }}</a>
+      <a href="#portfolio__social">{{ $t('AppNavigation.contacts') }}</a>
     </div>
   </div>
 </template>
@@ -54,7 +80,7 @@ export default defineComponent({
 
 @media (max-width: 768px) {
   .portfolio__navigation {
-    padding: 15px;
+    padding: 20px;
     display: block;
     position: fixed;
     width: 300px;
@@ -64,7 +90,9 @@ export default defineComponent({
     height: 100%;
     background-color: var(--background-color-primary);
     box-shadow: 0px 0px 5px 0px black;
-    transition: all 0.5s ease;
+    transition:
+      left 0.5s ease,
+      background-color 0.2s linear;
   }
   .portfolio__navigation-button-open {
     display: block;
@@ -87,7 +115,7 @@ export default defineComponent({
 
     border-radius: 4px;
     margin-right: 0;
-    transition: all 0.5s ease;
+    transition: background-color 0.2s linear;
   }
 
   .portfolio__navigation-list > a:hover {

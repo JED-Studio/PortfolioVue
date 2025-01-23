@@ -1,4 +1,13 @@
 {
+  "AppNavigation": {
+    "profile": "Главная",
+    "aboutMe": "Обо мне",
+    "experience": "Опыт Работы",
+    "skills": "Мои навыки",
+    "work": "Портфолио",
+    "contacts": "Контакты"
+  },
+
   "AppProfile": {
     "myName": "Привет, я Рома",
     "hello": "Будем знакомы"

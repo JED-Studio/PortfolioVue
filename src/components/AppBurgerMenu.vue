@@ -14,12 +14,14 @@
   margin-bottom: 7px;
   transition: width 0.5s ease;
 }
+
 .portfolio__icon-60 {
   width: 20px;
   height: 2px;
   background-color: var(--text-color);
   transition: width 0.5s ease;
 }
+
 .portfolio__icon-100 {
   width: 30px;
   height: 2px;

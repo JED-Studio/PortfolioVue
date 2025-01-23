@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -78,4 +82,13 @@ body::-webkit-scrollbar-thumb {
   --text-color-hover: rgb(255, 255, 255);
   --text-color-h1: rgb(0, 0, 0);
   --text-color-h2: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio__about-me-block,
+.portfolio__experience-block,
+.portfolio__work-block,
+.portfolio__social-block,
+.portfolio__my-skills-block,
+.portfolio__profile-block {
+  padding-top: 5rem;
 }

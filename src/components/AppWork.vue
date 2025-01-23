@@ -46,13 +46,15 @@ export default defineComponent({
     <div class="portfolio__work-grid">
       <AppCard
         v-for="card in filteredCards"
-        :key="card.cardId"
+        :key="card.id"
+        :cardId="card.cardId"
         :name="card.name"
         :description="card.description"
         :stack="card.stack"
         :tools="card.tools"
         :image="card.image"
-        :url="card.url"
+        :urlGit="card.urlGit"
+        :urlWeb="card.urlWeb"
       />
     </div>
   </div>

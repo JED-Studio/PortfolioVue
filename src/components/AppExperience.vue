@@ -30,7 +30,7 @@ export default defineComponent({
         doing3: 'AppExperience1.experienceDoing3',
         stack: 'AppExperience1.experienceStack',
         tools: 'AppExperience1.experienceTools',
-        image: '/public/svg/vecteezy.svg',
+        image: '/public/svg/O22.svg',
       },
     ])
 
