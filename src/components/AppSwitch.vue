@@ -1,54 +1,3 @@
-<script>
-import { defineComponent, onMounted, ref } from 'vue'
-
-export default defineComponent({
-  setup() {
-    const userTheme = ref('dark-theme')
-
-    const toggleTheme = () => {
-      if (userTheme.value === 'light-theme') {
-        setTheme('dark-theme')
-      } else {
-        setTheme('light-theme')
-      }
-      console.log(userTheme.value)
-    }
-
-    const getTheme = () => {
-      return localStorage.getItem('user-theme')
-    }
-
-    const setTheme = (theme) => {
-      localStorage.setItem('user-theme', theme)
-      userTheme.value = theme
-      document.documentElement.className = theme
-    }
-
-    const getMediaPreference = () => {
-      const hasDarkPreference = window.matchMedia('(prefers-color-scheme: dark)').matches
-      if (hasDarkPreference) {
-        setTheme('dark-theme')
-      } else {
-        setTheme('light-theme')
-      }
-    }
-
-    onMounted(() => {
-      const initUserTheme = getTheme() || getMediaPreference()
-      setTheme(initUserTheme)
-    })
-
-    return {
-      toggleTheme,
-      userTheme,
-      getTheme,
-      setTheme,
-      getMediaPreference,
-    }
-  },
-})
-</script>
-
 <template>
   <div class="flex">
     <input @change="toggleTheme" id="checkbox" type="checkbox" class="switch-checkbox" />
@@ -81,6 +30,50 @@ export default defineComponent({
   </div>
 </template>
 
+<script>
+import { ref, onMounted } from 'vue'
+
+export default {
+  setup() {
+    const userTheme = ref('dark-theme')
+
+    onMounted(() => {
+      const initUserTheme = getTheme() || getMediaPreference()
+      setTheme(initUserTheme)
+    })
+
+    const toggleTheme = () => {
+      const activeTheme = localStorage.getItem('user-theme')
+      if (activeTheme === 'dark-theme') {
+        setTheme('light-theme')
+      } else {
+        setTheme('dark-theme')
+      }
+    }
+
+    const getTheme = () => {
+      return localStorage.getItem('user-theme')
+    }
+
+    const setTheme = (theme) => {
+      localStorage.setItem('user-theme', theme)
+      userTheme.value = theme
+      document.documentElement.className = theme
+    }
+
+    const getMediaPreference = () => {
+      const hasDarkPreference = window.matchMedia('(prefers-color-scheme: dark)').matches
+      return hasDarkPreference ? 'light-theme' : 'dark-theme'
+    }
+
+    return {
+      userTheme,
+      toggleTheme,
+    }
+  },
+}
+</script>
+
 <style scoped>
 .switch-checkbox {
   display: none;
@@ -107,7 +100,7 @@ export default defineComponent({
   position: absolute;
   background-color: var(--background-color-primary);
   border-radius: 50%;
-  top: 2, 5px;
+  top: 2.5px;
   left: 0px;
   height: 22px;
   width: 22px;

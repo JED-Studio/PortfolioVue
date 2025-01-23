@@ -9,7 +9,7 @@
   },
 
   "AppProfile": {
-    "myName": "Привет, я Рома",
+    "myName": "Привет, я Рамазан",
     "hello": "Будем знакомы"
   },
   "AppAboutMe": {
@@ -22,27 +22,27 @@
     "experienceTitle": "Опыт работы",
     "experiencePosition": "Веб-разработчик",
     "experienceTime": "Полная занятость",
-    "experienceDate": "Апрель 2022 - декабрь 2022 9 месяцев",
+    "experienceDate": "Апрель 2022 - апрель 2024 2 года 10 месяцев",
     "experienceLocation": "Каспийск, Россия",
     "experienceDoing": "Разработка анимации и интерактивных элементов",
     "experienceDoing1": "Рефакторинг и переписывание старого кода",
     "experienceDoing2": "Оптимизация JavaScript-кода",
     "experienceDoing3": "Интеграция сторонних API",
-    "experienceStack": "Стек технологий:",
-    "experienceTools": "Инструменты:"
+    "experienceStack": "Стек технологий",
+    "experienceTools": "Инструменты"
   },
   "AppExperience1": {
     "experienceTitle": "",
     "experiencePosition": "Frontend-разработчик",
     "experienceTime": "Полная занятость",
-    "experienceDate": "Апрель 2022 - декабрь 2022 9 месяцев",
+    "experienceDate": "Апрель 2024  - январь 2025 10 месяцев",
     "experienceLocation": "Каспийск, Россия",
     "experienceDoing": "Разработка анимации и интерактивных элементов",
     "experienceDoing1": "Рефакторинг и переписывание старого кода",
     "experienceDoing2": "Оптимизация JavaScript-кода",
     "experienceDoing3": "Интеграция сторонних API",
-    "experienceStack": "Стек технологий:",
-    "experienceTools": "Инструменты:"
+    "experienceStack": "Стек технологий",
+    "experienceTools": "Инструменты"
   },
   "AppSkills": {
     "skills": "Мой стек",

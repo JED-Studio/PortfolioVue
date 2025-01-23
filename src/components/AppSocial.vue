@@ -1,8 +1,8 @@
 <template>
   <div class="portfolio__social-flex">
-    <div><a href="">Github</a></div>
-    <div><a href="">Telegram</a></div>
-    <div><a href="">VKontakte</a></div>
+    <a href="">Github</a>
+    <a href="@Jedstudio">Telegram</a>
+    <a href="https://vk.com/feed">VKontakte</a>
   </div>
 </template>
 
@@ -14,21 +14,21 @@
   align-items: center;
 }
 
-.portfolio__social-flex > div {
+.portfolio__social-flex > a {
+  display: block;
   position: relative;
   width: 100%;
   max-width: 108px;
   text-align: center;
   padding: 12px 16px;
-
+  cursor: pointer;
   color: rgb(127, 90, 240);
 }
 
-.portfolio__social-flex > div::after {
+.portfolio__social-flex > a::after {
   content: '';
   position: absolute;
   z-index: -2;
-
   width: 100%;
   height: 2px;
   left: 0;
@@ -37,11 +37,11 @@
   transition: all ease 0.3s;
 }
 
-.portfolio__social-flex > div:hover::after {
+.portfolio__social-flex > a:hover::after {
   height: 100%;
 }
 
-.portfolio__social-flex > div:hover {
+.portfolio__social-flex > a:hover {
   color: white;
 }
 </style>

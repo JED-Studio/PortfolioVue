@@ -31,8 +31,13 @@ export default defineComponent({
       <p>{{ $t(description) }}</p>
       <div class="portfolio__card-line"></div>
       <h4>{{ $t(stack) }}</h4>
-      <ul class="portfolio__stack">
-        <li v-for="tool in tools" :key="tool" style="display: list-item">
+      <ul class="portfolio__card-stack">
+        <li
+          v-for="tool in tools"
+          :key="tool"
+          class="portfolio__card-stack-item"
+          style="display: list-item"
+        >
           <span>{{ tool }}</span>
         </li>
       </ul>
@@ -56,13 +61,9 @@ export default defineComponent({
   transition: background-color 0.2s linear;
 }
 
-.portfolio__card-image {
-  width: 100%;
-
-  object-fit: cover;
-}
-
 .portfolio__card-image > img {
+  object-fit: cover;
+  height: 400px;
 }
 
 .portfolio__card-block {
@@ -87,8 +88,9 @@ h4 {
   padding: 1px;
 }
 
-.portfolio__stack {
+.portfolio__card-stack {
   list-style: square inside;
+  margin-bottom: 40px;
 }
 
 .portfolio__card-button {
@@ -96,5 +98,16 @@ h4 {
   align-items: center;
   gap: 16px;
   margin-top: auto;
+}
+
+.portfolio__card-stack-item::marker {
+  color: #7f5af0;
+}
+
+@media (max-width: 768px) {
+  .portfolio__card-image > img {
+    height: 100%;
+    width: 100%;
+  }
 }
 </style>

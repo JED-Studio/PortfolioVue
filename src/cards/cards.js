@@ -1,7 +1,7 @@
 export const cards = [
   {
     id: 1,
-    image: '/public/image/Nuxt.png',
+    image: 'image/Nuxt.png',
     name: 'AppWorkWeb1.workName',
     description: 'AppWorkWeb1.workDescription',
     stack: 'AppWorkWeb1.workStack',
@@ -12,7 +12,7 @@ export const cards = [
   },
   {
     id: 2,
-    image: '/public/image/Image (152).jpg',
+    image: 'image/Image (152).jpg',
     name: 'AppWorkWeb2.workName',
     description: 'AppWorkWeb2.workDescription',
     stack: 'AppWorkWeb2.workStack',
@@ -23,7 +23,7 @@ export const cards = [
   },
   {
     id: 3,
-    image: '/public/image/Image (155).jpg',
+    image: 'image/Image (155).jpg',
     name: 'AppWorkWeb3.workName',
     description: 'AppWorkWeb3.workDescription',
     stack: 'AppWorkWeb3.workStack',
@@ -34,7 +34,7 @@ export const cards = [
   },
   {
     id: 4,
-    image: '/public/image/Image (164).jpg',
+    image: 'image/Image (164).jpg',
     name: 'AppWorkWeb4.workName',
     description: 'AppWorkWeb4.workDescription',
     stack: 'AppWorkWeb4.workStack',
@@ -45,7 +45,7 @@ export const cards = [
   },
   {
     id: 5,
-    image: '/public/image/JavaS.png',
+    image: 'image/JavaS.png',
     name: 'AppWorkJs1.workName',
     description: 'AppWorkJs1.workDescription',
     stack: 'AppWorkJs1.workStack',
@@ -56,7 +56,7 @@ export const cards = [
   },
   {
     id: 6,
-    image: '/public/image/Scrin.png',
+    image: 'image/Scrin.png',
     name: 'AppWorkJs2.workName',
     description: 'AppWorkJs2.workDescription',
     stack: 'AppWorkJs2.workStack',
@@ -67,7 +67,7 @@ export const cards = [
   },
   {
     id: 7,
-    image: '/public/image/Image (121).png',
+    image: 'image/Image (121).png',
     name: 'AppWorkJs3.workName',
     description: 'AppWorkJs3.workDescription',
     stack: 'AppWorkJs3.workStack',
@@ -78,7 +78,7 @@ export const cards = [
   },
   {
     id: 8,
-    image: '/public/image/Image (154).jpg',
+    image: 'image/Image (154).jpg',
     name: 'AppWorkJs4.workName',
     description: 'AppWorkJs4.workDescription',
     stack: 'AppWorkJs4.workStack',
@@ -89,7 +89,7 @@ export const cards = [
   },
   {
     id: 9,
-    image: '/public/image/Image (120).png',
+    image: 'image/Image (120).png',
     name: 'AppWorkJs5.workName',
     description: 'AppWorkJs5.workDescription',
     stack: 'AppWorkJs5.workStack',

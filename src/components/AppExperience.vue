@@ -15,8 +15,10 @@ export default defineComponent({
         doing2: 'AppExperience.experienceDoing2',
         doing3: 'AppExperience.experienceDoing3',
         stack: 'AppExperience.experienceStack',
-        tools: 'AppExperience.experienceTools',
-        image: '/public/svg/vecteezy.svg',
+        toolTitle: 'AppExperience.experienceTools',
+        image: 'svg/vecteezy.svg',
+        skills: ['HTML', 'CSS', 'SASS', 'LESS', 'JavaScript', 'Vue'],
+        tools: ['VS Code', 'Git', 'Figma', 'Adobe Photoshop', 'Adobe Illustrator'],
       },
       {
         title: 'AppExperience1.experienceTitle',
@@ -29,8 +31,10 @@ export default defineComponent({
         doing2: 'AppExperience1.experienceDoing2',
         doing3: 'AppExperience1.experienceDoing3',
         stack: 'AppExperience1.experienceStack',
-        tools: 'AppExperience1.experienceTools',
-        image: '/public/svg/O22.svg',
+        toolTitle: 'AppExperience1.experienceTools',
+        image: 'svg/O22.svg',
+        skills: ['HTML', 'CSS', 'SASS', 'JavaScript', 'Vue', 'Nuxt', 'Pinia'],
+        tools: ['VS Code', 'Git', 'Figma', 'Adobe Photoshop', 'Adobe Illustrator'],
       },
     ])
 
@@ -83,21 +87,12 @@ export default defineComponent({
         <h4>{{ $t(item.stack) }}:</h4>
 
         <ul class="portfolio__stack">
-          <li>• HTML5</li>
-          <li>• CSS 3</li>
-          <li>• SCSS</li>
-          <li>• Less</li>
-          <li>• JavaScript</li>
-          <li>• VUE</li>
+          <li v-for="skill in item.skills" :key="skill">• {{ skill }}</li>
         </ul>
-        <h4>{{ $t(item.tools) }}:</h4>
+        <h4>{{ $t(item.toolTitle) }}:</h4>
 
         <ul class="portfolio__tools">
-          <li>• VS Code</li>
-          <li>• Git</li>
-          <li>• Figma</li>
-          <li>• Adobe Photoshop</li>
-          <li>• Adobe Illustrator</li>
+          <li v-for="tool in item.tools" :key="tool">• {{ tool }}</li>
         </ul>
       </div>
     </div>

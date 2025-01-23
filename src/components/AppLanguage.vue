@@ -19,13 +19,11 @@ export default defineComponent({
     const switchLanguage = (language) => {
       i18n.locale.value = language
       currentLocale.value = language
-      localStorage.setItem('local', language)
+      localStorage.setItem('locale', language)
     }
 
     const flag = computed(() => {
-      return currentLocale.value === 'Ru'
-        ? '/public/svg/russia.svg'
-        : '/public/svg/united_kingdom.svg'
+      return currentLocale.value === 'Ru' ? 'svg/russia.svg' : 'svg/united_kingdom.svg'
     })
 
     return {
