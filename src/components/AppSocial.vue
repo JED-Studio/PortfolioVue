@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio__social-flex">
-    <a href="">Github</a>
-    <a href="@Jedstudio">Telegram</a>
+    <a href="https://github.com/JED-Studio">Github</a>
+    <a href="https://t.me/Jedstudio">Telegram</a>
     <a href="https://vk.com/feed">VKontakte</a>
   </div>
 </template>
