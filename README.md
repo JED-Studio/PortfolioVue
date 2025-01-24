@@ -1,3 +1,4 @@
+![alt text](https://github.com/JED-Studio/PortfolioVue/blob/main/public/image/Portfolio.png)
 # Portfolio
 
 This template should help get you started developing with Vue 3 in Vite.
