@@ -90,6 +90,7 @@ export default defineComponent({
 header {
   top: 0;
   position: sticky;
+  z-index: 20;
 }
 
 header > div {
